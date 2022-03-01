@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <title>Letter and character counter</title>
+</head>
+
+<body>
+  <header id='header'>
+    <a href="index.html">
+      <h1>Mathcha</h1>
+    </a>
+    <h1 id="right">Counter</h1>
+  </header>
+
+
+  <div class="container">
+    <p>Type a sentence and count the characters?</p>
+    <label for="textInput">Submit your sentence</label><br>
+    <textarea name="textInput" id="inputField" placeholder="write here"></textarea>
+    <input type="submit" name="textInput" id="button" value="SUBMIT" onclick="getValue()" />
+    <p id="output"></p>
+  </div>
+
+  <script>
+    function getValue() {
+      let select = document.querySelector('#inputField').value;
+      const change = document.querySelector('#output');
+      change.innerText = 'This sentence is consist of ' + select.split('').length + ' character ' + 'and ' + select.split(' ').length + ' word';
+    }
+  </script>
+</body>
+
+</html>

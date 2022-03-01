@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <title>Mathematical capcha</title>
+</head>
+
+<body>
+  <header id='header'>
+    <h1>Mathcha</h1>
+    <a href="counter.html"><h1 id="right">Counter</h1></a>
+  </header>
+
+  <div class="container">
+    <p>What is the sum of <span id="num1">17</span> + <span id="num2">13</span>?</p>
+    <label for="textInput">Submit your Answer</label><br>
+    <input form="submitForm" type="number" name="textInput" id="inputField" />
+    <input type="submit" name="textInput" id="button" value="SUBMIT" onclick="getValue()" />
+    <p id="output"></p>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
