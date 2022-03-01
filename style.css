@@ -41,6 +41,13 @@ p {
   text-transform: capitalize;
 }
 
+a{
+ color:white;
+}
+a:hover{
+  color:yellow;
+}
+
 /*input*/
 label {
   font-weight: normal;
