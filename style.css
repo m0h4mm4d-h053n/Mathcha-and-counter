@@ -2,6 +2,8 @@
 @font-face {
     font-family: 'Aqua Grotesque';
     src: url('aqua.woff');
+}
+
 body {
   font-family: 'Aqua Grotesque';
   margin: 0;
